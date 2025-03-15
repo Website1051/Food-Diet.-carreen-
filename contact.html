@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&callback=initMap" async defer></script>
+    <script>
+        function initMap() {
+            var myLocation = { lat: -2.5263, lng: 32.9068 };  // Coordinates for Bugando
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 15,
+                center: myLocation
+            });
+            var marker = new google.maps.Marker({
+                position: myLocation,
+                map: map
+            });
+        }
+    </script>
+</head>
+<body>
+
+    <header>
+        <h1>Contact Us</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="guide.html">Dietary Guidelines</a></li>
+                <li><a href="diet-plans.html">Diet Plans</a></li>
+                <li><a href="myths-facts.html">Myths & Facts</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-info">
+            <div class="contact-header">
+                <h2>We'd Love to Hear From You!</h2>
+                <p>If you have any questions, suggestions, or just want to say hello, feel free to get in touch.</p>
+            </div>
+            <div class="contact-details">
+                <div class="contact-item">
+                    <i class="fas fa-user"></i>
+                    <p><strong>Name:</strong> Careen K. Kayungi</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <p><strong>Email:</strong> <a href="mailto:careenkayungi00@gmail.com">careenkayungi00@gmail.com</a></p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <p><strong>Phone:</strong> <a href="tel:+255653683032">+255653683032</a></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="map">
+            <h2>Find Us on the Map</h2>
+            <div id="map">
+                
+            
+            </div>
+        </section>
+
+        <section class="contact-form">
+            <h2>Contact Form</h2>
+                        <form action="https://formspree.io/f/mwplkgrz"
+  method="POST">
+                <div class="form-row">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                </div>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Food and Balanced Diet Program | Designed by Careen K. Kayungi</p>
+    </footer>
+
+</body>
+</html>

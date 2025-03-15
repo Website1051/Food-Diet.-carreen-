@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+
+nav a.active {
+    color: white;
+    background-color: orange;
+    border-radius: 5px;
+}
+
+body {
+    background-color: #f8f8f8;
+    color: #333;
+    text-align: center;
+}
+
+header {
+    background: #4CAF50;
+    color: white;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    background: #388E3C;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+nav ul li a:hover {
+    background: #2E7D32;
+}
+
+/* About Intro Section */
+.about-intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+}
+
+.about-content {
+    width: 50%;
+    padding: 20px;
+    text-align: left;
+}
+
+.about-content h2 {
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+.about-content p {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.about-image {
+    width: 40%;
+    text-align: center;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* About Mission Section */
+.about-mission {
+    padding: 40px 20px;
+    background: #e8f5e9;
+    text-align: center;
+}
+
+.about-mission h2 {
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+/* About Values Section */
+.about-values {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.values-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.value-box {
+    width: 300px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.value-box:hover {
+    transform: scale(1.05);
+}
+
+.value-box img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.value-box h3 {
+    color: #4CAF50;
+    margin-bottom: 5px;
+}
+
+.value-box p {
+    color: #555;
+}
+
+footer {
+    background: #333;
+    color: white;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-intro {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-content, .about-image {
+        width: 100%;
+    }
+
+    .values-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .value-box {
+        width: 90%;
+    }
+}
